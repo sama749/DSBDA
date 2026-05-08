@@ -1,0 +1,314 @@
+DSBDA Tableau Practical Viva Explanation (Iris Dataset)
+Practical Title
+
+Perform different types of data visualizations using Tableau on Iris dataset.
+
+Dataset used: Iris Dataset
+
+Tool used: Tableau Public/Desktop
+
+Introduction
+
+The Iris dataset is a famous dataset used for data analysis and visualization.
+
+It contains measurements of iris flowers:
+
+Sepal Length
+Sepal Width
+Petal Length
+Petal Width
+Species
+
+There are three flower species:
+
+Iris-setosa
+Iris-versicolor
+Iris-virginica
+
+Using Tableau, different visualization techniques were performed to understand patterns, relationships, distributions, and hierarchy in data.
+
+1D (Linear) Data Visualization
+Objective
+
+To visualize a single variable.
+
+Visualization Used
+
+Bar Chart
+
+Fields Used
+Species
+Count of Iris.csv
+Procedure
+Dragged Species to Rows.
+Dragged Count(Iris.csv) to Columns.
+Tableau created a bar chart automatically.
+Explanation
+
+This visualization shows the number of records for each iris species.
+
+It helps in:
+
+frequency analysis
+distribution analysis
+comparison between categories
+Observation
+
+All species have approximately equal number of records.
+
+2D (Planar) Data Visualization
+Objective
+
+To analyze relationship between two variables.
+
+Visualization Used
+
+Scatter Plot
+
+Fields Used
+AVG(SepalWidthCm)
+AVG(SepalLengthCm)
+Species
+Procedure
+Dragged Avg Sepal Width to Columns.
+Dragged Avg Sepal Length to Rows.
+Added Species to Shape/Color.
+Explanation
+
+Scatter plot shows relationship between sepal width and sepal length.
+
+Each point represents one species.
+
+Observation
+
+Different species have different average sepal measurements.
+
+3D (Volumetric) Data Visualization
+Objective
+
+To represent three-dimensional data.
+
+Visualization Used
+
+Bubble/Histogram Style Visualization
+
+Fields Used
+Sepal Length
+Sepal Width
+Petal Width
+Procedure
+Added Sepal Length to Columns.
+Added Sepal Width to Rows.
+Used bubble size/color for additional dimension.
+Explanation
+
+3D visualization represents:
+
+X-axis
+Y-axis
+third variable using size or color
+
+It helps analyze multiple dimensions together.
+
+Observation
+
+Flower measurements vary across species.
+
+Temporal Data Visualization
+Objective
+
+To visualize data over sequence/time.
+
+Problem
+
+Iris dataset does not contain date or time field.
+
+Solution
+
+Created artificial sequence using INDEX().
+
+Procedure
+Created calculated field:
+Record Number = INDEX()
+Dragged Record Number to Columns.
+Dragged Avg(SepalLengthCm) to Rows.
+Selected Line chart.
+Added Species to Color.
+Explanation
+
+Temporal visualization shows trends over ordered records.
+
+Since no actual time field exists, sequential indexing was used.
+
+Observation
+
+Variation in sepal length can be observed across record sequence.
+
+Multidimensional Data Visualization
+Objective
+
+To visualize multiple attributes simultaneously.
+
+Visualization Used
+
+Colored bar visualization.
+
+Fields Used
+Species
+Petal Length
+Petal Width
+Sepal Length
+Procedure
+Added Species to Rows.
+Added Petal Length to Columns.
+Added Sepal Length to Color.
+Added Petal Width to Size.
+Explanation
+
+Multiple variables are represented together using:
+
+size
+color
+axis
+
+This helps in deeper data analysis.
+
+Observation
+
+Iris-virginica shows larger petal dimensions.
+
+Tree / Hierarchical Data Visualization
+Objective
+
+To represent hierarchical relationships.
+
+Visualization Used
+
+Treemap
+
+Hierarchy Used
+
+Species → Petal Category
+
+Procedure
+Created calculated field:
+Petal Category
+Small
+Medium
+Large
+Used Species and Petal Category hierarchy.
+Selected Treemap.
+Explanation
+
+Treemap displays hierarchical data using rectangles.
+
+Rectangle size represents quantity.
+
+Observation
+
+Different species belong to different petal size categories.
+
+Network Data Visualization
+Objective
+
+To visualize relationships between entities.
+
+Visualization Used
+
+Relationship Bubble Chart
+
+Relationship
+
+Species ↔ Petal Category
+
+Procedure
+Added Species to Rows.
+Added Petal Category to Columns.
+Changed Marks to Circle.
+Added Count(Iris.csv) to Size.
+Added Species to Color.
+Explanation
+
+Network visualization represents relationships between nodes.
+
+Here:
+
+Species are source nodes
+Petal categories are target nodes
+
+Circle size represents relationship strength.
+
+Observation
+
+Each species is strongly associated with specific petal category.
+
+Advantages of Tableau
+Easy drag-and-drop interface
+Interactive dashboards
+Fast visualization
+Supports multiple chart types
+Good for business intelligence and analytics
+Conclusion
+
+Using Tableau, different visualization techniques were successfully performed on the Iris dataset:
+
+1D
+2D
+3D
+Temporal
+Multidimensional
+Hierarchical
+Network visualization
+
+These visualizations help understand:
+
+distributions
+relationships
+trends
+hierarchy
+multidimensional patterns
+
+Thus, Tableau is an effective tool for visual analytics and business intelligence.
+
+Important Viva Questions & Answers
+Q1. What is Tableau?
+
+Tableau is a data visualization and business intelligence tool.
+
+Q2. What is data visualization?
+
+Graphical representation of data using charts and graphs.
+
+Q3. What is 1D visualization?
+
+Visualization involving one variable only.
+
+Q4. What is 2D visualization?
+
+Visualization showing relationship between two variables.
+
+Q5. Why is scatter plot used?
+
+To analyze correlation between two numeric variables.
+
+Q6. What is multidimensional visualization?
+
+Visualization of multiple attributes together.
+
+Q7. Why was INDEX() used?
+
+Because Iris dataset has no time/date field.
+
+Q8. What is a treemap?
+
+Hierarchical visualization using rectangles.
+
+Q9. What is network visualization?
+
+Visualization showing relationships between entities.
+
+Q10. Difference between dimensions and measures?
+Dimension	Measure
+Qualitative data	Quantitative data
+Categorical	Numeric
+Example: Species	Example: Sepal Length

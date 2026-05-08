@@ -1,0 +1,40 @@
+Aim
+
+To visualize the Forest Fire dataset using Python libraries such as Matplotlib and Seaborn.
+
+Introduction
+
+Data visualization is the process of representing data in graphical form to understand patterns, trends, and relationships. In this practical, various plots are generated for the Forest Fire dataset.
+
+Libraries Used
+Matplotlib: Used for basic plotting such as line charts, bar graphs, and histograms.
+Seaborn: Built on Matplotlib, used for advanced statistical visualizations and attractive plots.
+Visualizations Performed
+1. Histogram
+Used to show the frequency distribution of numerical features.
+Example: Temperature, wind speed, and burned area distribution.
+2. Scatter Plot
+Displays relationship between two variables.
+Example: Temperature vs burned area to analyze impact of temperature on fire spread.
+3. Bar Plot
+Used to compare categorical data.
+Example: Number of forest fires across different months or days.
+4. Box Plot
+Shows data distribution and helps detect outliers.
+Example: Spread of burned area and temperature values.
+5. Heatmap
+Represents correlation between variables using colors.
+Helps identify strong positive or negative relationships between features.
+6. Line Plot
+Used to show trends over time.
+Example: Fire occurrences across months.
+Steps Involved
+Import necessary libraries: Pandas, Matplotlib, Seaborn
+Load the Forest Fire dataset
+Perform basic data preprocessing if required
+Generate various plots using plotting functions
+Analyze the visualizations to identify patterns
+
+Conclusion
+
+Data visualization using Matplotlib and Seaborn helps in better understanding of the Forest Fire dataset. It allows identification of trends, relationships, and outliers, which are useful for further analysis and decision-making.

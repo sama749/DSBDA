@@ -1,0 +1,46 @@
+Aim
+
+To perform different types of data visualizations on the Iris dataset using Tableau.
+
+Introduction
+
+Data visualization helps in understanding patterns and relationships in data. In this practical, multiple visualization techniques are applied on the Iris dataset using Tableau.
+
+a) 1D (Linear) Data Visualization
+Represents data using a single variable.
+Typically shown using bar charts or histograms.
+Example: Count of each Iris species (Setosa, Versicolor, Virginica).
+Helps in understanding distribution of one feature.
+b) 2D (Planar) Data Visualization
+Displays relationship between two variables.
+Represented using scatter plots.
+Example: Sepal Length vs Sepal Width.
+Helps identify correlation between features.
+c) 3D (Volumetric) Data Visualization
+Represents data using three dimensions.
+Can be visualized using bins, bubble charts, or 3-axis plots.
+Example: Sepal Length, Sepal Width, and Petal Width.
+Helps analyze complex relationships.
+d) Temporal Data Visualization
+Shows how data changes over time or sequence.
+Represented using line plots.
+Example: Variation of sepal length over record index.
+Helps identify trends.
+e) Multidimensional Data Visualization
+Uses multiple variables in a single plot.
+Represented using color, size, and shape.
+Example: Species, petal length, sepal length in one visualization.
+Helps in deeper analysis of dataset.
+f) Tree / Hierarchical Data Visualization
+Represents hierarchical structure using tree maps.
+Data is divided into categories and subcategories.
+Example: Species categorized by petal size (Small, Medium, Large).
+Helps in understanding proportions.
+g) Network Data Visualization
+Shows relationships between different entities.
+Represented using nodes and connections.
+Example: Relationship between species and petal categories.
+Helps in identifying connections.
+Conclusion
+
+Various visualization techniques in Tableau help in better understanding of the Iris dataset. These visualizations reveal patterns, relationships, and distributions, making data analysis more effective.

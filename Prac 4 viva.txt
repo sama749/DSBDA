@@ -1,84 +1,40 @@
-Air Quality and Heart Disease Dataset Using Python
+Air Quality and Heart Disease Dataset Using Python:
 
 Introduction
 In this practical, we performed different data preprocessing operations and built a machine learning model using Python on Air Quality and Heart Disease datasets.
 The operations performed are:
-
-
 Data Cleaning
-
-
 Data Integration
-
-
 Data Transformation
-
-
 Error Correcting
-
-
 Data Model Building
 
-
 We used Python libraries such as:
-
-
 pandas
-
-
 numpy
-
-
 matplotlib
-
-
 seaborn
-
-
 scikit-learn
-
-
 
 Step 1: Import Libraries
 import pandas as pdimport numpy as npimport matplotlib.pyplot as pltimport seaborn as sns
 Explanation
-
-
 pandas is used for handling datasets.
-
-
 numpy is used for numerical calculations.
-
-
 matplotlib and seaborn are used for visualization.
-
 
 Machine learning libraries:
 from sklearn.model_selection import train_test_splitfrom sklearn.linear_model import LogisticRegressionfrom sklearn.metrics import accuracy_score
-
-
 train_test_split() divides data into training and testing sets.
-
-
 LogisticRegression() creates classification model.
-
-
 accuracy_score() calculates prediction accuracy.
-
-
 
 Step 2: Load Dataset
 air = pd.read_csv("Air Quality.csv")heart = pd.read_csv("heart.csv")
 Explanation
 read_csv() reads CSV files and stores them into dataframe format.
-
-
 air stores Air Quality dataset.
-
-
 heart stores Heart Disease dataset.
-
-
 
 Step 3: Data Cleaning
 Data cleaning removes incomplete and repeated data.
@@ -107,14 +63,8 @@ Merge Datasets
 data = pd.concat([air, heart], ignore_index=True, sort=False)
 Explanation
 concat() combines both datasets into one dataframe.
-
-
 ignore_index=True creates new indexing.
-
-
 sort=False prevents unnecessary sorting.
-
-
 
 Step 5: Data Transformation
 data = pd.get_dummies(data, drop_first=True)
@@ -125,66 +75,38 @@ Example:
 GenderConvertedMale1Female0
 
 Step 6: Error Correcting
-
 A) Fix Column Names
 data.columns = data.columns.str.replace(' ', '_')
 Explanation
 Removes spaces from column names.
 Example:
-
-
 "Air Quality" becomes "Air_Quality"
-
-
 
 B) Remove Outliers
 for col in data.select_dtypes(include=np.number).columns:        data = data[        (data[col] >= data[col].quantile(0.01)) &        (data[col] <= data[col].quantile(0.99))    ]
 Explanation
 Outliers are abnormal values that affect model accuracy.
 This code removes:
-
-
 values below 1%
-
-
 values above 99%
 
-
-
 Step 7: Data Visualization
-
 Histogram
 data.hist(figsize=(10,8))plt.show()
 Explanation
 Histogram displays frequency distribution of data.
 It helps understand:
-
-
 data spread
-
-
 concentration
-
-
 skewness
-
-
 
 Heatmap
 plt.figure(figsize=(10,6))sns.heatmap(data.corr(), cmap='coolwarm')plt.show()
 Explanation
 Heatmap shows correlation between attributes.
-
-
 Positive correlation
-
-
 Negative correlation
-
-
 Strong relationships
-
-
 Correlation Formula:
 r=∑(xi−xˉ)(yi−yˉ)∑(xi−xˉ)2∑(yi−yˉ)2r = \frac{\sum (x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum (x_i-\bar{x})^2 \sum (y_i-\bar{y})^2}}r=∑(xi​−xˉ)2∑(yi​−yˉ​)2​∑(xi​−xˉ)(yi​−yˉ​)​
 
@@ -205,15 +127,10 @@ Split Dataset
 X_train, X_test, y_train, y_test = train_test_split(        X,    y,    test_size=0.2,    random_state=42)
 Explanation
 Dataset divided into:
-
-
 80% Training Data
-
-
 20% Testing Data
-
-
 random_state=42 ensures same random split every time.
+
 Dataset split:
 Training Data=80%,Testing Data=20%Training\ Data = 80\% \quad , \quad Testing\ Data = 20\%Training Data=80%,Testing Data=20%
 
@@ -237,24 +154,10 @@ Accuracy=Correct PredictionsTotal PredictionsAccuracy = \frac{Correct\ Predictio
 
 Result
 Thus, the Air Quality and Heart Disease datasets were successfully processed using Python by performing:
-
-
 Data Cleaning
-
-
 Data Integration
-
-
 Data Transformation
-
-
 Error Correcting
-
-
 Data Visualization
-
-
 Data Model Building
-
-
 The Logistic Regression model was successfully trained and tested, and prediction accuracy was calculated successfully.

@@ -1,9 +1,7 @@
 Aim
-
 To perform different types of data visualizations on the Iris dataset using Tableau.
 
 Introduction
-
 Data visualization helps in understanding patterns and relationships in data. In this practical, multiple visualization techniques are applied on the Iris dataset using Tableau.
 
 a) 1D (Linear) Data Visualization

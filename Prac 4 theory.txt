@@ -1,50 +1,34 @@
 Aim
-
 To perform data preprocessing and model building using Air Quality and Heart Disease datasets in Python.
 
 a) Data Cleaning
-
 Data cleaning involves removing noise and inconsistencies from the dataset.
-
 Missing values are handled using mean, median, or forward fill methods.
 Duplicate records are removed.
 Irrelevant attributes are eliminated.
-
 Example: Filling missing pollution values or heart dataset attributes.
 
 b) Data Integration
-
 Data integration combines data from multiple sources into a unified dataset.
-
 Different datasets are merged to perform better analysis.
 Ensures consistency in format and structure.
-
 Example: Combining Air Quality data with Heart Disease data for analysis.
 
 c) Data Transformation
-
 Data is transformed into a suitable format for analysis.
-
 Normalization and standardization are applied.
 Categorical data is converted into numerical form using encoding.
-
 Example: Converting Yes/No values into 0/1 and scaling features.
 
 d) Error Correction
-
 Error correction identifies and fixes incorrect data.
-
 Invalid or inconsistent values are removed or corrected.
 Outliers are detected and handled.
-
 Example: Removing negative values or abnormal entries.
 
 e) Data Model Building
-
 After preprocessing, a machine learning model is built.
-
 Dataset is divided into training and testing sets.
 Algorithms like Logistic Regression or Decision Tree are used.
 Model performance is evaluated using accuracy and other metrics.
-
 Example: Predicting heart disease or pollution levels.

@@ -1,83 +1,42 @@
-Forest Fire Dataset Visualization using Matplotlib and Seaborn
+Forest Fire Dataset Visualization using Matplotlib and Seaborn:
 
 Aim
 To visualize the Forest Fire dataset using Python libraries:
-
-
 Matplotlib
-
-
 Seaborn
-
-
 by plotting different types of graphs.
 
 Introduction
 Data visualization is the graphical representation of data.
 It helps to:
-
-
 understand patterns
-
-
 identify trends
-
-
 detect outliers
-
-
 analyze relationships between variables
 
-
 In this practical, we used:
-
-
 Matplotlib
-
-
 Seaborn
-
-
 to create different visualizations for the Forest Fire dataset.
 
 Step 1: Import Libraries
 Code
 import pandas as pdimport matplotlib.pyplot as pltimport seaborn as sns
-
 Explanation
 LibraryPurposepandasDataset handlingmatplotlibBasic plottingseabornAdvanced visualization
 
 Step 2: Load Dataset
 Code
 forest = pd.read_csv("forestfires.csv")print(forest.head())
-
 Explanation
-
-
 read_csv() loads dataset into dataframe.
-
-
 head() displays first 5 rows.
-
-
 Dataset contains attributes like:
-
-
 temperature
-
-
 humidity
-
-
 wind
-
-
 rain
-
-
 burned area
-
-
 
 Step 3: Check Dataset Information
 Code
